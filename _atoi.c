@@ -8,7 +8,6 @@
  */
 
 int interactive(info_t *info)
-
 {
 	return (isatty(STDIN_FILENO) && info->readfd <= 2);
 }
@@ -21,7 +20,6 @@ int interactive(info_t *info)
  */
 
 int is_delim(char c, char *delim)
-
 {
 	while (*delim)
 		if (*delim++ == c)
@@ -36,7 +34,6 @@ int is_delim(char c, char *delim)
  */
 
 int _isalpha(int c)
-
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
@@ -51,7 +48,6 @@ int _isalpha(int c)
  */
 
 int _atoi(char *s)
-
 {
 	int i, sign = 1, flag = 0, output;
 	unsigned int result = 0;
