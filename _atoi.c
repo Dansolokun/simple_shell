@@ -3,7 +3,6 @@
 /**
  * interactive - it will returns true if shell is interactive mode
  * @info: its a struct address
- *
  * Return: 1 when its in an interactive mode, 0 if is absolutely not 
  */
 
@@ -11,7 +10,7 @@ int interactive(info_t *info)
 {
 	return (isatty(STDIN_FILENO) && info->readfd <= 2);
 }
-
+																		
 /**
  * is_delim - it helps to check if character is a delimeter
  * @c: it is the character to be check
@@ -71,6 +70,6 @@ int _atoi(char *s)
 		output = -result;
 	else
 		output = result;
-
+									
 	return (output);
 }
