@@ -41,8 +41,8 @@ int _isalpha(int c)
 
 /**
  * _atoi - it will always convert string to integer
- * @s: a that string is converted																					
- * Return: 0 when no number string, convert number otherway 
+ * @s: a that string is converted
+ * Return: 0 when no number string, convert number otherway
  */
 
 int _atoi(char *s)
